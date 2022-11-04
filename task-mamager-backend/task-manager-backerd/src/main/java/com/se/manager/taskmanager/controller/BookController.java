@@ -1,4 +1,4 @@
-package com.se.manager.taskmanager.bookDetails;
+package com.se.manager.taskmanager.controller;
 
 import com.se.manager.taskmanager.model.Author;
 import com.se.manager.taskmanager.model.Book;

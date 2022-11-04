@@ -1,14 +1,21 @@
 # Spring GQL demo
 
 Used annotations
-  * @SchemaMapping
+  * @SchemaMapping -> maps the handler method to a field with the same name in the schema
   * @Argument
   * @QueryMapping
 
+
+The “!” at the end of some names indicates that it's a non-nullable type
+
+
 ## uses instructions
 
-Navigate to http://localhost:8080/graphiql or your custom URL.
+Navigate to or your GQL URL.
 
+```
+http://localhost:8080/graphiql 
+```
 query 
 ```json
 query {
