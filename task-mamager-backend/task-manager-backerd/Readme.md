@@ -71,3 +71,40 @@ method must have parameters annotated with @Argument that correspond to the corr
 
 
 
+### Remark 3
+```java
+mutation
+  {
+  createPost(title: "New Title", authorId: "Author2", text: "New Text")
+    { id
+      category
+      author {   
+        id
+        name      
+}
+}}
+```
+
+or 
+```java
+mutation createPost ($title: String!, $text: String!, $category: String, $authorId: String!) {
+    createPost (title: $title, text: $text, category: $category, authorId: $authorId) {
+        id
+        title
+        text
+        category
+    }
+}
+```
+
+
+### Remark 3
+generarte docs
+```bash
+  npm install -g @2fd/graphdoc
+```
+
+```bash
+  graphdoc -e http://localhost:8080/graphql -o ./doc/schema
+```
+
