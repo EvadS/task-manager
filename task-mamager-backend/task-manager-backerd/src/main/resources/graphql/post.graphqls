@@ -14,12 +14,26 @@ type Author {
     posts: [Post]!
 }
 
+type Person {
+    id: ID!
+    name: String!
+    age: Int!
+    language: String
+    city: String!
+    gender: String!
+}
+
 # The Root Query for the application
 type Query {
     recentPosts(count: Int, offset: Int): [Post]!
+
+    #Persons queries
+    recentPerson(from: Int, to: Int): [Person]!
 }
 
 # The Root Mutation for the application
 type Mutation {
     createPost(title: String!, text: String!, category: String, authorId: String!) : Post!
+
+    createPerson(name: String!, age: Int!, language: String, city: String!, gender: String!) : Person!
 }

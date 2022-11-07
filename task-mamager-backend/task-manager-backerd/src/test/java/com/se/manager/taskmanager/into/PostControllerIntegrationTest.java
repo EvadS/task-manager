@@ -54,4 +54,6 @@ class PostControllerIntegrationTest {
         Path path = Paths.get("src/test/resources/graphql-test/" + fileName + "_expected_response.json");
         return new String(Files.readAllBytes(path));
     }
+
+
 }

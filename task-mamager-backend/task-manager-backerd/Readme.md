@@ -108,3 +108,32 @@ generarte docs
   graphdoc -e http://localhost:8080/graphql -o ./doc/schema
 ```
 
+### Create person mutation
+
+```post
+http://localhost:8080/graphql
+```
+
+```body
+mutation createPerson ($name: String!, $age: Int!, $language: String, $city: String!,$gender: String!) {
+    createPerson (name: $name, age:$age, language: $language, city: $city, gender:$gender) {
+        name
+        age
+        language
+        city
+        gender
+
+    }
+}
+```
+
+```variables
+{
+  "name": "new post",
+  "age": 30,
+  "language": "category",
+  "city": "Author0",
+  "gender":"Male"
+}
+```
+

@@ -1,0 +1,10 @@
+query recentPerson ($from: Int, $to: Int) {
+    recentPerson (from: $from, to: $to) {
+        id
+        name
+        age
+        language
+        city
+        gender
+    }
+}

@@ -16,22 +16,6 @@
         "language": "English",
         "city": "Kiev",
         "gender": "Male"
-      },
-      {
-        "id": "Person_3",
-        "name": "Person name:3",
-        "age": 33,
-        "language": "French",
-        "city": "Warshaw",
-        "gender": "Female"
-      },
-      {
-        "id": "Person_4",
-        "name": "Person name:4",
-        "age": 34,
-        "language": "English",
-        "city": "Kiev",
-        "gender": "Male"
       }
     ]
   }
